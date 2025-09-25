@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: white;
+  overflow: hidden;
+}
+
+/* Login Screen */
+#login {
+  position: fixed;
+  inset: 0;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  z-index: 100;
+}
+
+#login input {
+  width: 80%;
+  max-width: 400px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+#login button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #26a69a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Chat Area (hidden by default) */
+#chat-container {
+  display: none;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Messages */
+.chat-box {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-message {
+  margin: 6px 0;
+  padding: 10px 14px;
+  border-radius: 16px;
+  max-width: 75%;
+  word-wrap: break-word;
+}
+
+.chat-message.self {
+  align-self: flex-end;
+  background-color: #00796b;
+  color: white;
+  text-align: right;
+}
+
+.chat-message.other {
+  align-self: flex-start;
+  background-color: #2a2a2a;
+  color: white;
+  text-align: left;
+}
+
+.status {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 4px;
+}
+
+/* Input bar */
+.input-area {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1f1f1f;
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.input-area input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  background-color: #fff;
+  color: #000;
+}
+
+.input-area button {
+  padding: 12px 16px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.input-area button[type="submit"] {
+  background-color: #26a69a;
+  color: white;
+}
+
+.input-area .clear-btn {
+  background-color: #b71c1c;
+  color: white;
+}
