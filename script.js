@@ -1,15 +1,24 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyB-xF9PIjuFc81WewSX8BgLaEoK1PO5P1E",
   authDomain: "skip-4d58d.firebaseapp.com",
   projectId: "skip-4d58d",
   storageBucket: "skip-4d58d.firebasestorage.app",
   messagingSenderId: "291052427486",
-  appId: "1:291052427486:web:06c20ffaa244c273354a4f"
+  appId: "1:291052427486:web:06c20ffaa244c273354a4f",
+  measurementId: "G-12WTEFGZ3S"
 };
 
-firebase.initializeApp(firebaseConfig);
-const db = firebase.database();
-const PASSWORD = "072009";
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 // Check login
 function checkLogin() {
@@ -92,3 +101,4 @@ function listenForMessages() {
   });
 
 }
+
