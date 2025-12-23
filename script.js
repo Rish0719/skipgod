@@ -1,11 +1,10 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyBRN7k17JtwvbTJivpuPAdyv4NGR_J0tww",
-  authDomain: "srchat-d9f03.firebaseapp.com",
-  databaseURL: "https://srchat-d9f03-default-rtdb.firebaseio.com",
-  projectId: "srchat-d9f03",
-  storageBucket: "srchat-d9f03.appspot.com",
-  messagingSenderId: "381081144538",
-  appId: "1:381081144538:web:ecbfb57657bb80162f29e3"
+  apiKey: "AIzaSyB-xF9PIjuFc81WewSX8BgLaEoK1PO5P1E",
+  authDomain: "skip-4d58d.firebaseapp.com",
+  projectId: "skip-4d58d",
+  storageBucket: "skip-4d58d.firebasestorage.app",
+  messagingSenderId: "291052427486",
+  appId: "1:291052427486:web:06c20ffaa244c273354a4f"
 };
 
 firebase.initializeApp(firebaseConfig);
@@ -91,4 +90,5 @@ function listenForMessages() {
 
     chatBox.scrollTop = chatBox.scrollHeight;
   });
+
 }
